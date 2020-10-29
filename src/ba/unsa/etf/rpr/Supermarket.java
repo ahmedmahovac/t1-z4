@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr;
 
 public class Supermarket {
-   private static Artikl[] artikli;
+   private  Artikl[] artikli;
 
     public Supermarket() {
 

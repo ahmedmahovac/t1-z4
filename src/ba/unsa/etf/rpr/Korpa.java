@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr;
 
 public class Korpa {
-    private final Artikl[] artikli;
+    private  Artikl[] artikli;
 
     public Korpa() {
         artikli = new Artikl[50]; // inic na null
