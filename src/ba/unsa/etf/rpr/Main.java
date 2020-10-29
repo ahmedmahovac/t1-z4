@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Korpa korpa = new Korpa();
-    private static Supermarket supermarket = new Supermarket();
+
+    private static Korpa korpa = new Korpa(); // defaultni
+    private static Supermarket supermarket = new Supermarket(); // defaultni
 
     private static void unosArtikalaUMarket(){
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
@@ -30,6 +31,7 @@ public class Main {
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "20"));
     }
 
+
     public static void ispisArtikala(Artikl[] artikli){
         for (Artikl a : artikli) {
             if(a != null) System.out.println("Naziv: " + a.getNaziv() + ", Kod: " + a.getKod() + ", Cijena: " + a.getCijena() + " KM");
@@ -37,6 +39,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+       // System.out.println(Korpa);
 //      Kreirati program koji modelira supermarket. Kupac ima korpu koja moze sadrzavati maksimalno 50 artikala.
 //      Supermarket maksimalno sadrzi 1000 artikala. Artikl je odredjen svojim nazivom, cijenom i kodom.
 //      Radi jednostavnosti cemo pretpostaviti da su svi kodovi artikala razliciti. Program treba da radi sljedece:
