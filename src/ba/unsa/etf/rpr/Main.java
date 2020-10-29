@@ -69,9 +69,9 @@ public class Main {
                 System.out.println("Dodavanje artikla u korpu\nArtikli u marketu su: ");
                 ispisArtikala(supermarket.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
-                String kod = scanner.nextLine();
-                kod = scanner.nextLine();
-                System.out.println(kod);
+                String garbage = scanner.nextLine(); // jel ovo brise /n
+               String kod = scanner.nextLine();
+
                 if(!kod.equals("c")){
                     Artikl a = supermarket.izbaciArtiklSaKodom(kod);
                     if(a != null){
