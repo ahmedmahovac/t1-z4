@@ -16,7 +16,7 @@ public class Supermarket {
 
     public Artikl izbaciArtiklSaKodom(String kod) {
         Artikl tmp = null;
-        for(int i=0; i<artikli.length; i++) if(artikli[i].getKod().equals(kod)) {
+        for(int i=0; i<artikli.length; i++) if(artikli[i] != null && artikli[i].getKod().equals(kod)) {
             tmp = artikli[i];
             artikli[i] = null;
         }
@@ -31,4 +31,5 @@ public class Supermarket {
             }
         }
     }
+
 }
