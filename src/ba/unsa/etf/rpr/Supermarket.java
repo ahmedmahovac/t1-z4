@@ -25,7 +25,10 @@ public class Supermarket {
 
     public void dodajArtikl(Artikl x) {
         for(int i=0; i<artikli.length; i++) {
-            if(artikli[i] == null) artikli[i] = x;
+            if(artikli[i] == null)  {
+                artikli[i] = x;
+               return;
+            }
         }
     }
 }

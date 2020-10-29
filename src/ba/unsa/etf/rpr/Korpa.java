@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr;
 
 public class Korpa {
-    private Artikl[] artikli;
+    private final Artikl[] artikli;
 
     public Korpa() {
         artikli = new Artikl[50]; // inic na null
@@ -22,9 +22,9 @@ public class Korpa {
         Artikl tmp = null;
         for(int i=0; i<artikli.length; i++) if(artikli[i].getKod().equals(kod)) {
             tmp = artikli[i];
-            artikli[i] = null;
+            artikli[i] =  null;
         }
-        return null;
+        return tmp;
     }
 
     public int dajUkupnuCijenuArtikala() {
