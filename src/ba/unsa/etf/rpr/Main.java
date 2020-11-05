@@ -9,6 +9,7 @@ public class Main {
     private static Supermarket supermarket = new Supermarket(); // defaultni
 
     private static void unosArtikalaUMarket(){
+        //fdfdfs
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
         supermarket.dodajArtikl(new Artikl("Brasno", 10, "2"));
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "3"));

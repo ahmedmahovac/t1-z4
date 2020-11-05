@@ -1,14 +1,17 @@
 package ba.unsa.etf.rpr;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class SupermarketTest {
 
+
+
     @Test
     void izbaciArtiklSaKodomKadaNemaArtikla() {
-     Supermarket s1 = new Supermarket();
+
      assertSame(null, s1.izbaciArtiklSaKodom("1"));
     }
 
