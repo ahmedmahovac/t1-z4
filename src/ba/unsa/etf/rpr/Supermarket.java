@@ -4,9 +4,7 @@ public class Supermarket {
    private  Artikl[] artikli;
 
     public Supermarket() {
-
         artikli = new Artikl[1000]; // inic na null
-
     }
 
 
